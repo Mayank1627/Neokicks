@@ -1,0 +1,682 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&family=Bangers&family=Bungee+Inline&family=Bungee+Outline&family=Chivo+Mono:ital,wght@0,100..900;1,100..900&family=DM+Serif+Display:ital@0;1&family=Lobster&family=Love+Ya+Like+A+Sister&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik+Mono+One&family=Satisfy&family=Sigmar&family=Spline+Sans:wght@300..700&family=Thasadith:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+</head>
+
+<style>
+    /* ScrollBar */
+    .scrollbar-hide::-webkit-scrollbar {
+        display: none;
+    }
+    .scrollbar-hide {
+        -ms-overflow-style: none;  
+        scrollbar-width: none; 
+    }
+
+    @keyframes glow {
+        0% { text-shadow: 0 0 5px #ff1493, 0 0 10px #ff1493; }
+        50% { text-shadow: 0 0 15px #ff69b4, 0 0 25px #ff1493; }
+        100% { text-shadow: 0 0 5px #ff1493, 0 0 10px #ff1493; }
+    }
+    .animate-glow {
+        animation: glow 2s ease-in-out infinite;
+    }
+</style>
+
+
+<body class="bg-gray-100">
+
+    <!-- Section-1 -->
+    <nav class="w-370 h-20 bg-gradient-to-r from-[#6a0dad] via-[#d63384] to-[#ff1493] absolute top-4 left-5.5 rounded-[15px]">
+
+        <h1 class="text-4xl bg-gradient-to-b from-gray-100 to-gray-100 bg-clip-text text-transparent font-[sigmar] p-2 inline-block mt-2 ml-6 hover:from-[#00FFFF] hover:to-[#008080] ">neokicks</h1>
+
+        <div class=" flex gap-5 justify-space-between absolute top-2.5 left-80 h-16 w-150 p-2">
+            
+            <div class="group h-12 w-20  p-2 bg-gradient-to-b from-gray-100 to-gray-100 bg-clip-text text-transparent text-xl text-center  " style="font-family: 'DM Serif Display', serif;">Home
+            </div>
+
+            <div class="group h-12 w-18 p-2  bg-gradient-to-b from-gray-100 to-gray-100 text-xl text-center bg-clip-text text-transparent  " style="font-family: 'DM Serif Display', serif;">Shop
+            </div>
+
+            <div class="group h-12 w-30  p-2 bg-gradient-to-b from-gray-100 to-gray-100 text-xl text-center bg-clip-text text-transparent  " style="font-family: 'DM Serif Display', serif;">Collections
+            </div>
+
+            <div class="group h-12 w-27  p-2 bg-gradient-to-b from-gray-100 to-gray-100 text-xl text-center bg-clip-text text-transparent  " style="font-family: 'DM Serif Display', serif;">About Us
+            </div>
+
+            <div class="group h-12 w-22  p-2 bg-gradient-to-b from-gray-100 to-gray-100 text-xl text-center  bg-clip-text text-transparent  " style="font-family: 'DM Serif Display', serif;">Contact
+            </div>
+        </div>
+
+        <div class="inline-block absolute top-2.5 right-12 h-16 w-60">
+            <i class="fa-solid fa-cart-shopping text-2xl text-white p-4 ml-12 text-center"></i>
+            <img src="https://randomuser.me/api/portraits/women/79.jpg" alt="img" class="inline-block h-14 w-14 ml-10 rounded-full mb-1">
+        </div>
+    </nav>
+
+
+    <!-- Section-2 -->
+     <div></div>
+    <div class="group inline-block h-110 w-120 mt-40 ml-30 rounded-md">
+        <img src="images/shoe1.png" class="h-full w-full brightness-75 object-cover group-hover:brightness-90">
+    </div>
+
+
+
+    <!-- Section-3 -->
+      <div class="absolute top-30 left-220 h-150 w-120  p-4 ">
+
+        <p class="text-m text-gray-500 font-serif font-bold mt-4">Basketball Shoes</p>
+        <h1 class="text-4xl text-gray-950  mt-2" style="font-family: 'DM Serif Display';">Gianni 4 Series</h1>
+        <div class="mt-2">
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star-half-stroke"></i>
+        <p class="font-semibold font-serif inline-block ml-2">200K+ ratings</p>
+        </div>
+
+
+        <p class="text-m text-gray-600 leading-tight tracking-tight mt-6" style="font-family: 'Chivo Mono';">
+            Elevate your game with our premium basketball shoes designed for ultimate 
+            performance, unmatched comfort, 
+            and dynamic style on the court.
+        </p>
+
+        <h2 class="text-3xl  mt-8 inline-block font-[450]" style="font-family: 'DM Serif Display';" >$ 125.99</h2>
+        <button class="absolute cursor-default pointer-events-none h-6 w-12 bg-black text-[12px]  text-white top-69.5 left-40 rounded-md">40% off</button>
+        <p class="text-gray-600 font-semibold mt-1 line-through">$198.99</p>
+
+
+        <div class=" flex  h-10 w-100 mt-10 ">
+            <button class="h-10 w-12 bg-gray-200 border-r-1 border-r-pink-300 shadow-md rounded-l-md hover:bg-gray-400"><i class="fa-solid fa-plus"></i></button>
+            <div class="p-2 h-10 w-12 font-bold text-m  text-center">1</div>
+            <button class="h-10 w-12 bg-gray-200 border-l-1 border-l-pink-300 shadow-md rounded-r-md hover:bg-gray-400"><i class="fa-solid fa-minus"></i></button>
+
+            <button class="h-10 w-50 bg-gradient-to-r from-[#8738d6] via-[#e84ca1] to-[#ff66c4] 
+               ml-10 font-semibold text-gray-200 shadow-md rounded-xl
+               hover:bg-[#6a0dad] hover:shadow-lg hover:scale-105 transition-all duration-300">
+                        Add to Cart <i class="fa-solid fa-cart-shopping ml-3"></i>
+                        </button>
+
+        </div>
+
+
+        <p class=" inline-block font-semibold text-gray-600 mt-10">Select your Size</p>
+        <span class="text-pink-500 font-bold ml-8 ">Size Chart <i class="fa-solid fa-greater-than mb-2 text-[11px] "></i></span>
+
+        <div class="flex h-16 w-100 justify-around items-center relative mt-2">
+            <div class="h-13 w-13 rounded-full bg-gray-100 border-1 border-gray-500 shadow-xl p-2 text-center text-xl font-[450px] hover:border-purple-600 hover:border-2">S</div>
+            <div class="h-13 w-13 rounded-full bg-gray-100 border-1 border-gray-500 shadow-xl p-2 text-center text-xl font-[450px] hover:border-purple-600 hover:border-2">M</div>
+            <div class="h-13 w-13 rounded-full bg-gray-100 border-1 border-gray-500 shadow-xl p-[8px] text-center text-xl font-[450px] hover:border-purple-600 hover:border-2">L</div>
+            <div class="h-13 w-13 rounded-full bg-gray-100 border-1 border-gray-500 shadow-xl p-[8px] text-center text-xl font-[450px] hover:border-purple-600 hover:border-2">XL</div>
+            <div class="h-13 w-13 rounded-full bg-gray-100 border-1 border-gray-500 shadow-xl p-[10px] text-center text-xl font-[450px] hover:border-purple-600 hover:border-2">XXL</div>
+
+            <span class="absolute h-5 w-11 bg-gradient-to-r from-[#6a0dad] via-[#d63384] to-[#ff1493] text-white top-11 left-5 text-center font-bold text-[13px] rounded-md">2 left</span>
+            <span class="absolute h-5 w-11 bg-gradient-to-r from-[#6a0dad] via-[#d63384] to-[#ff1493] text-white top-11 left-25 text-center font-bold text-[13px] rounded-md">4 left</span>
+            <span class="absolute h-5 w-11 bg-gradient-to-r from-[#6a0dad] via-[#d63384] to-[#ff1493] text-white top-11 left-64.5 text-center font-bold text-[13px] rounded-md">1 left</span>
+        </div>
+
+      </div>
+    
+
+    <!-- Section-4 -->
+    <div class="flex gap-4 justify-evenly items-center h-30 w-120 ml-30 mt-10">
+        <div><img src="images/shoe2.png" class="h-25 w-25 rounded-xl border-1 border-gray-100 shadow shadow-black hover:border-purple-500 hover:border-3 hover:scale-120 hover:opacity-[0.8] transition-all duration-300"></div>
+        <div><img src="images/shoe3.png" class="h-25 w-25 rounded-xl border-1 border-gray-100 shadow shadow-black hover:border-purple-500 hover:scale-120 hover:border-3 hover:opacity-[0.8] transition-all duration-300"></div>
+        <div><img src="images/shoe4.png" class="h-25 w-25 rounded-xl border-1 object-cover shadow shadow-black border-gray-100 hover:border-purple-500 hover:border-3 hover:scale-120 hover:opacity-[0.8] transition-all duration-300"></div>
+        <div><img src="images/shoe5.png" class="h-25 w-25 rounded-xl border-1 border-gray-100 shadow shadow-black hover:border-purple-500  hover:border-3 hover:scale-120 hover:opacity-[0.8] transition-all duration-300"></div>
+    </div>
+
+
+    <!-- Section-5 -->
+
+    <div class="w-[96%] px-4 pt-8 pb-12 mt-20  mx-auto bg-gradient-to-t from-purple-200 to-pink-200 rounded-xl shadow-xl shadow-gray-500">
+
+        <h1 class="text-[45px] font-semibold p-2 text-center text-purple-800" style="font-family: 'Bangers';">What our Customer Say About Us ?</h1>
+
+        <div class="flex gap-10 mt-6 overflow-x-auto scrollbar-hide">
+
+            <div class="relative flex-shrink-0 w-48 h-52 bg-gray-100 rounded-[10px] hover:bg-gray-300 ">
+                <img src="images/user4.jpg" class="absolute top-2 left-2 rounded-full h-12 w-12 object-cover">
+                <span class="absolute top-2 left-18 font-semibold text-[18px] font-serif">Sophia</span>
+                <span class="red-star  absolute top-8 left-18 text-[18px] text-yellow-400 ">★★★★⯨</span>
+                <p class="text-gray-700 text-sm font-serif mt-15 p-3">Worn them daily for months, and they still look brand new. Extremely durable and well-built</p>
+            </div>
+            <div class="relative flex-shrink-0 w-48 h-52 bg-gray-100 rounded-[10px]  hover:bg-gray-300 ">
+                <img src="images/user3.jpg" class="absolute top-2 left-2 rounded-full h-12 w-12 object-cover">
+                <span class="absolute top-2 left-18 font-semibold text-[18px] font-serif">_Ava07</span>
+                <span class="red-star  absolute top-8 left-18 text-[18px] text-yellow-400 ">★★★⯨</span>
+                <p class="text-gray-700 text-sm font-serif mt-15 p-3">Unmatched comfort! Feels like walking on clouds. Perfect for all-day wear without any discomfort</p>
+            </div>
+            <div class="relative flex-shrink-0 w-48 h-52 bg-gray-100 rounded-[10px]  hover:bg-gray-300 ">
+                <img src="images/user2.jpg" class="absolute top-2 left-2 rounded-full h-12 w-12 object-cover">
+                <span class="absolute top-2 left-18 font-semibold text-[18px] font-serif">Chris Jones</span>
+                <span class="red-star  absolute top-8 left-18 text-[18px] text-yellow-400 ">★★★★★</span>
+                <p class="text-gray-700 text-sm font-serif mt-15 p-3">"Absolutely love the sleek design! These shoes complement every outfit and grab attention effortlessly."</p>
+            </div>
+            <div class="relative flex-shrink-0 w-48 h-52 bg-gray-100 rounded-[10px]  hover:bg-gray-300 ">
+                <img src="images/user1.jpg" class="absolute top-2 left-2 rounded-full h-12 w-12 object-cover">
+                <span class="absolute top-2 left-18 font-semibold text-[18px] font-serif">Ryan11</span>
+                <span class="red-star  absolute top-8 left-18 text-[18px] text-yellow-400 ">★★⯨</span>
+                <p class="text-gray-700 text-sm font-serif mt-15 p-3">Looks great, but not as comfortable as expected. Cushioning feels a bit stiff for long walks</p>
+            </div>
+            <div class="relative flex-shrink-0 w-48 h-52 bg-gray-100 rounded-[10px]  hover:bg-gray-300 ">
+                <img src="images/user5.jpg" class="absolute top-2 left-2 rounded-full h-12 w-12 object-cover">
+                <span class="absolute top-2 left-18 font-semibold text-[18px] font-serif">Harry</span>
+                <span class="red-star  absolute top-8 left-18 text-[18px] text-yellow-400 ">★★★★⯨</span>
+                <p class="text-gray-700 text-sm font-serif mt-15 p-3">Great traction and support! Perfect for running or workouts, providing stability and flexibility in every step</p>
+            </div>
+            <div class="relative flex-shrink-0 w-48 h-52 bg-gray-100 rounded-[10px]  hover:bg-gray-300 ">
+                <img src="images/user3.jpg" class="absolute top-2 left-2 rounded-full h-12 w-12 object-cover">
+                <span class="absolute top-2 left-18 font-semibold text-[18px] font-serif">Rhea</span>
+                <span class="red-star  absolute top-8 left-18 text-[18px] text-yellow-400 ">★★★⯨</span>
+                <p class="text-gray-700 text-sm font-serif mt-15 p-3">Unmatched comfort! Feels like walking on clouds. Perfect for all-day wear without any discomfort</p>
+            </div>
+            <div class="relative flex-shrink-0 w-48 h-52 bg-gray-100 rounded-[10px]  hover:bg-gray-300 ">
+                <img src="images/user4.jpg" class="absolute top-2 left-2 rounded-full h-12 w-12 object-cover">
+                <span class="absolute top-2 left-18 font-semibold text-[18px] font-serif">Alisa_2</span>
+                <span class="red-star  absolute top-8 left-18 text-[18px] text-yellow-400 ">★★★★⯨</span>
+                <p class="text-gray-700 text-sm font-serif mt-15 p-3">Worn them daily for months, and they still look brand new. Extremely durable and well-built</p>
+            </div>
+
+        </div>
+        
+        
+        <input type="text" class="h-12 w-[80%] bg-white mt-10 ml-20 px-4 rounded-full" placeholder="Share your Experience....">
+        <button class="ml-10 w-[8%] h-12 bg-purple-600 rounded-full hover:bg-purple-700 text-white font-semibold text-[18px]"><i class="fa-regular fa-paper-plane mr-4"></i>Post</button>
+        
+
+    </div>
+
+    <!-- Section-6-->
+
+
+    <div class=" p-5 w-[98%] mt-40 mx-auto">
+        <h1 class="text-[40px] pl-[1em]" style="font-family:'Bungee Inline';">You might Also like</h1>
+
+
+        <div class="flex gap-10 p-8 mt-8 overflow-x-auto scrollbar-hide ">
+
+
+            <div class=" flex-shrink-0 hover:scale-103 hover:-translate-x-1 hover:-translate-y-1 transition-all duration-300
+            shadow-xl shadow-gray-800 ">
+                <div class="group h-80 w-85 relative">
+                    <img  alt="shoe" src="images/cardshoe1-1.png" class="absolute object-cover h-full w-full opacity-100 group-hover:opacity-0   transition-opacity duration-200 ">
+                    <img  alt="shoe" src="images/cardshoe1-2.png" class="absolute object-cover h-full w-full opacity-0   group-hover:opacity-100   transition-opacity duration-200 ">
+                </div>
+
+                <div class="p-4 pr-3 bg-white rounded-b-2xl" style="font-family: 'Poppins';">
+                    <p class="text-[16px] font-bold inline-block" style="word-spacing: 3px;" >Nike Tatum 3</p>
+
+                    <select name="color" id="color" class="inline-block p-2 ml-28 bg-gray-200 hover:bg-gray-400 border-2 border-gray-200 hover:border-gray-400  rounded-md ">
+                        <option value="Color" hidden >Color</option>
+                        <option value="Color">Red</option>
+                        <option value="Color">Blue</option>
+                        <option value="Color">Black</option>
+                    </select>
+
+                    <p class="text-[13px] text-gray-700  font-semibold py-1">Men's BasketBall Shoes</p>
+
+                    <p class="text-[16px] text-gray-950 font-[400]  mt-4">Select your Size</p>
+                    <div class="flex justify-around mt-3">
+                        <button class="bg-gray-200 font-[500] px-[17px] py-2 rounded-xl hover:bg-gray-400 shadow-gray-500 shadow-md">7</button>
+                        <button class="bg-gray-200 font-[500] px-4 py-2 rounded-xl hover:bg-gray-400 shadow-gray-500 shadow-md">8</button>
+                        <button class="bg-gray-200 font-[500] px-4 py-2 rounded-xl hover:bg-gray-400 shadow-gray-500 shadow-md">9</button>
+                        <button class="bg-gray-200 font-[500] px-3 py-2 rounded-xl hover:bg-gray-400 shadow-gray-500 shadow-md">10</button>
+                    </div>
+
+                    <p class="text-gray-800 font-[800] text-[22px] mt-6 px-2 inline-block">$349.99</p>
+                    <button class="p-3 bg-gradient-to-r from-pink-400 to-purple-400 ml-14 mt-10 rounded-xl
+                    hover:from-pink-500 hover:to-purple-500 text-white shadow-gray-400 shadow-xl">Add to Cart
+                        <i class="fa-solid fa-cart-shopping text-white ml-2"></i>
+                    </button>
+
+                </div>
+
+            </div>
+
+            
+
+            <div class=" flex-shrink-0 hover:scale-103 hover:-translate-x-1 hover:-translate-y-1 transition-all duration-300 shadow-xl shadow-gray-800">
+                <div class="group h-80 w-85 relative ">
+                    <img  alt="shoe" src="images/cardshoe2-1.png" class="absolute object-cover h-full w-full opacity-100 group-hover:opacity-0   transition-opacity duration-200 ">
+                    <img  alt="shoe" src="images/cardshoe2-2.png" class="absolute object-cover h-full w-full opacity-0   group-hover:opacity-100 transition-opacity duration-200 ">
+                </div>
+
+                <div class="p-4 pr-3 bg-white rounded-b-2xl" style="font-family: 'Poppins';">
+                    <p class="text-[16px] font-bold inline-block" style="word-spacing: 3px;" >Nike Jumpman MVP</p>
+
+                    <select name="color" id="color" class="inline-block p-2 ml-13 bg-gray-200 hover:bg-gray-400 border-2 border-gray-200 hover:border-gray-400  rounded-md ">
+                        <option value="Color" hidden >Color</option>
+                        <option value="Color">Red</option>
+                        <option value="Color">Blue</option>
+                        <option value="Color">Black</option>
+                    </select>
+
+                    <p class="text-[13px] text-gray-700  font-semibold py-1">High Top Sneakers</p>
+
+                    <p class="text-[16px] text-gray-950 font-[400]  mt-4">Select your Size</p>
+                    <div class="flex justify-around mt-3">
+                        <button class="bg-gray-200 font-[500] px-[17px] py-2 rounded-xl hover:bg-gray-400 shadow-gray-500 shadow-md">7</button>
+                        <button class="bg-gray-200 font-[500] px-4 py-2 rounded-xl hover:bg-gray-400 shadow-gray-500 shadow-md">8</button>
+                        <button class="bg-gray-200 font-[500] px-4 py-2 rounded-xl hover:bg-gray-400 shadow-gray-500 shadow-md">9</button>
+                        <button class="bg-gray-200 font-[500] px-3 py-2 rounded-xl hover:bg-gray-400 shadow-gray-500 shadow-md">10</button>
+                    </div>
+
+                    <p class="text-gray-800 font-[800] text-[22px] mt-6 px-2 inline-block" >$120.99</p>
+                    <button class="p-3 bg-gradient-to-r from-pink-400 to-purple-400 ml-14 mt-10 rounded-xl
+                    hover:from-pink-500 hover:to-purple-500 text-white shadow-gray-400 shadow-xl">Add to Cart
+                        <i class="fa-solid fa-cart-shopping text-white ml-2"></i>
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <div class=" flex-shrink-0 hover:scale-103 hover:-translate-x-1 hover:-translate-y-1 transition-all duration-300 shadow-xl shadow-gray-800">
+                <div class="group h-80 w-85 relative ">
+                    <img  alt="shoe" src="images/cardshoe3-1.png" class="absolute object-cover h-full w-full opacity-100 group-hover:opacity-0   transition-opacity duration-200 ">
+                    <img  alt="shoe" src="images/cardshoe3-2.png" class="absolute object-cover h-full w-full opacity-0   group-hover:opacity-100 transition-opacity duration-200 ">
+                </div>
+
+                <div class="p-4 pr-3 bg-white rounded-b-2xl" style="font-family: 'Poppins';">
+                    <p class="text-[16px] font-bold inline-block" style="word-spacing: 3px;" >Nike AirMax Dn</p>
+
+                    <select name="color" id="color" class="inline-block p-2 ml-22 bg-gray-200 hover:bg-gray-400 border-2 border-gray-200 hover:border-gray-400  rounded-md ">
+                        <option value="Color" hidden >Color</option>
+                        <option value="Color">Red</option>
+                        <option value="Color">Blue</option>
+                        <option value="Color">Black</option>
+                    </select>
+
+                    <p class="text-[13px] text-gray-700  font-semibold py-1">Casual Sneakers</p>
+
+                    <p class="text-[16px] text-gray-950 font-[400]  mt-4">Select your Size</p>
+                    <div class="flex justify-around mt-3">
+                        <button class="bg-gray-200 font-[500] px-[17px] py-2 rounded-xl hover:bg-gray-400 shadow-gray-500 shadow-md">7</button>
+                        <button class="bg-gray-200 font-[500] px-4 py-2 rounded-xl hover:bg-gray-400 shadow-gray-500 shadow-md">8</button>
+                        <button class="bg-gray-200 font-[500] px-4 py-2 rounded-xl hover:bg-gray-400 shadow-gray-500 shadow-md">9</button>
+                        <button class="bg-gray-200 font-[500] px-3 py-2 rounded-xl hover:bg-gray-400 shadow-gray-500 shadow-md">10</button>
+                    </div>
+
+                    <p class="text-gray-800 font-[800] text-[22px] mt-6 px-2 inline-block" >$199.99</p>
+                    <button class="p-3 bg-gradient-to-r from-pink-400 to-purple-400 ml-14 mt-10 rounded-xl
+                    hover:from-pink-500 hover:to-purple-500 text-white shadow-gray-400 shadow-xl">Add to Cart
+                        <i class="fa-solid fa-cart-shopping text-white ml-2"></i>
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <div class=" flex-shrink-0 hover:scale-103 hover:-translate-x-1 hover:-translate-y-1 transition-all duration-300 shadow-xl shadow-gray-800">
+                <div class="group h-80 w-85 relative ">
+                    <img  alt="shoe" src="images/cardshoe4-1.png" class="absolute object-cover h-full w-full opacity-100 group-hover:opacity-0   transition-opacity duration-200 ">
+                    <img  alt="shoe" src="images/cardshoe4-2.png" class="absolute object-cover h-full w-full opacity-0   group-hover:opacity-100 transition-opacity duration-200 ">
+                </div>
+
+                <div class="p-4 pr-3 bg-white rounded-b-2xl" style="font-family: 'Poppins';">
+                    <p class="text-[16px] font-bold inline-block"style="word-spacing: 3px;" >Jordan 1 Mid SE</p>
+
+                    <select name="color" id="color" class="inline-block p-2 ml-22 bg-gray-200 hover:bg-gray-400 border-2 border-gray-200 hover:border-gray-400  rounded-md ">
+                        <option value="Color" hidden >Color</option>
+                        <option value="Color">Red</option>
+                        <option value="Color">Blue</option>
+                        <option value="Color">Black</option>
+                    </select>
+
+                    <p class="text-[13px] text-gray-700  font-semibold py-1">Women's Mid top Sneakers</p>
+
+                    <p class="text-[16px] text-gray-950 font-[400]  mt-4">Select your Size</p>
+                    <div class="flex justify-around mt-3">
+                        <button class="bg-gray-200 font-[500] px-[17px] py-2 rounded-xl hover:bg-gray-400 shadow-gray-500 shadow-md">7</button>
+                        <button class="bg-gray-200 font-[500] px-4 py-2 rounded-xl hover:bg-gray-400 shadow-gray-500 shadow-md">8</button>
+                        <button class="bg-gray-200 font-[500] px-4 py-2 rounded-xl hover:bg-gray-400 shadow-gray-500 shadow-md">9</button>
+                        <button class="bg-gray-200 font-[500] px-3 py-2 rounded-xl hover:bg-gray-400 shadow-gray-500 shadow-md">10</button>
+                    </div>
+
+                    <p class="text-gray-800 font-[800] text-[22px] mt-6 px-2 inline-block" >$89.99</p>
+                    <button class="p-3 bg-gradient-to-r from-pink-400 to-purple-400 ml-14 mt-10 rounded-xl
+                    hover:from-pink-500 hover:to-purple-500 text-white shadow-gray-400 shadow-xl">Add to Cart
+                        <i class="fa-solid fa-cart-shopping text-white ml-2"></i>
+                    </button>
+
+                </div>
+
+            </div>
+
+            <div class=" flex-shrink-0 hover:scale-103 hover:-translate-x-1 hover:-translate-y-1 transition-all duration-300 shadow-xl shadow-gray-800">
+                <div class="group h-80 w-85 relative ">
+                    <img  alt="shoe" src="images/cardshoe5-1.jpg" class="absolute object-cover h-full w-full opacity-100 group-hover:opacity-0   transition-opacity duration-200 ">
+                    <img  alt="shoe" src="images/cardshoe5-2.jpg" class="absolute object-cover h-full w-full opacity-0   group-hover:opacity-100 transition-opacity duration-200 ">
+                </div>
+
+                <div class="p-4 pr-3 bg-white rounded-b-2xl" style="font-family: 'Poppins';">
+                    <p class="text-[16px] font-bold inline-block"style="word-spacing: 3px;" >Adidas Adizero Zubaz</p>
+
+                    <select name="color" id="color" class="inline-block p-2 ml-9 bg-gray-200 hover:bg-gray-400 border-2 border-gray-200 hover:border-gray-400  rounded-md ">
+                        <option value="Color" hidden >Color</option>
+                        <option value="Color">Red</option>
+                        <option value="Color">Blue</option>
+                        <option value="Color">Black</option>
+                    </select>
+
+                    <p class="text-[13px] text-gray-700  font-semibold py-1">Football Cleats</p>
+
+                    <p class="text-[16px] text-gray-950 font-[400]  mt-4">Select your Size</p>
+                    <div class="flex justify-around mt-3">
+                        <button class="bg-gray-200 font-[500] px-[17px] py-2 rounded-xl hover:bg-gray-400 shadow-gray-500 shadow-md">7</button>
+                        <button class="bg-gray-200 font-[500] px-4 py-2 rounded-xl hover:bg-gray-400 shadow-gray-500 shadow-md">8</button>
+                        <button class="bg-gray-200 font-[500] px-4 py-2 rounded-xl hover:bg-gray-400 shadow-gray-500 shadow-md">9</button>
+                        <button class="bg-gray-200 font-[500] px-3 py-2 rounded-xl hover:bg-gray-400 shadow-gray-500 shadow-md">10</button>
+                    </div>
+
+                    <p class="text-gray-800 font-[800] text-[22px] mt-6 px-2 inline-block" >$259.99</p>
+                    <button class="p-3 bg-gradient-to-r from-pink-400 to-purple-400 ml-14 mt-10 rounded-xl
+                    hover:from-pink-500 hover:to-purple-500 text-white shadow-gray-400 shadow-xl">Add to Cart
+                        <i class="fa-solid fa-cart-shopping text-white ml-2"></i>
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <div class=" flex-shrink-0 hover:scale-103 hover:-translate-x-1 hover:-translate-y-1 transition-all duration-300 shadow-xl shadow-gray-800">
+                <div class="group h-80 w-85 relative ">
+                    <img  alt="shoe" src="images/cardshoe6-1.webp" class="absolute object-cover h-full w-full opacity-100 group-hover:opacity-0   transition-opacity duration-200 ">
+                    <img  alt="shoe" src="images/cardshoe6-2.webp" class="absolute object-cover h-full w-full opacity-0   group-hover:opacity-100 transition-opacity duration-200 ">
+                </div>
+
+                <div class="p-4 pr-3 bg-white rounded-b-2xl" style="font-family: 'Poppins';">
+                    <p class="text-[16px] font-bold inline-block" style="word-spacing: 3px;">New Balance 9060's</p>
+
+                    <select name="color" id="color" class="inline-block p-2 ml-14 bg-gray-200 hover:bg-gray-400 border-2 border-gray-200 hover:border-gray-400  rounded-md ">
+                        <option value="Color" hidden >Color</option>
+                        <option value="Color">Red</option>
+                        <option value="Color">Blue</option>
+                        <option value="Color">Black</option>
+                    </select>
+
+                    <p class="text-[13px] text-gray-700  font-semibold py-1">Casual Sneakers</p>
+
+                    <p class="text-[16px] text-gray-950 font-[400]  mt-4">Select your Size</p>
+                    <div class="flex justify-around mt-3">
+                        <button class="bg-gray-200 font-[500] px-[17px] py-2 rounded-xl hover:bg-gray-400 shadow-gray-500 shadow-md">7</button>
+                        <button class="bg-gray-200 font-[500] px-4 py-2 rounded-xl hover:bg-gray-400 shadow-gray-500 shadow-md">8</button>
+                        <button class="bg-gray-200 font-[500] px-4 py-2 rounded-xl hover:bg-gray-400 shadow-gray-500 shadow-md">9</button>
+                        <button class="bg-gray-200 font-[500] px-3 py-2 rounded-xl hover:bg-gray-400 shadow-gray-500 shadow-md">10</button>
+                    </div>
+
+                    <p class="text-gray-800 font-[800] text-[22px] mt-6 px-2 inline-block" >$189.99</p>
+                    <button class="p-3 bg-gradient-to-r from-pink-400 to-purple-400 ml-14 mt-10 rounded-xl
+                    hover:from-pink-500 hover:to-purple-500 text-white shadow-gray-400 shadow-xl">Add to Cart
+                        <i class="fa-solid fa-cart-shopping text-white ml-2"></i>
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <div class=" flex-shrink-0 hover:scale-103 hover:-translate-x-1 hover:-translate-y-1 transition-all duration-300 shadow-xl shadow-gray-800">
+                <div class="group h-80 w-85 relative ">
+                    <img  alt="shoe" src="images/cardshoe7-1.png" class="absolute object-cover h-full w-full opacity-100 group-hover:opacity-0   transition-opacity duration-200 ">
+                    <img  alt="shoe" src="images/cardshoe7-2.png" class="absolute object-cover h-full w-full opacity-0   group-hover:opacity-100 transition-opacity duration-200 ">
+                </div>
+
+                <div class="p-4 pr-3 bg-white rounded-b-2xl" style="font-family: 'Poppins';">
+                    <p class="text-[16px] font-bold inline-block" style="word-spacing: 3px;">Nike Alphafly 3</p>
+
+                    <select name="color" id="color" class="inline-block p-2 ml-22 bg-gray-200 hover:bg-gray-400 border-2 border-gray-200 hover:border-gray-400  rounded-md ">
+                        <option value="Color" hidden >Color</option>
+                        <option value="Color">Red</option>
+                        <option value="Color">Blue</option>
+                        <option value="Color">Black</option>
+                    </select>
+
+                    <p class="text-[13px] text-gray-700  font-semibold py-1">Running Shoes</p>
+
+                    <p class="text-[16px] text-gray-950 font-[400]  mt-4">Select your Size</p>
+                    <div class="flex justify-around mt-3">
+                        <button class="bg-gray-200 font-[500] px-[17px] py-2 rounded-xl hover:bg-gray-400 shadow-gray-500 shadow-md">7</button>
+                        <button class="bg-gray-200 font-[500] px-4 py-2 rounded-xl hover:bg-gray-400 shadow-gray-500 shadow-md">8</button>
+                        <button class="bg-gray-200 font-[500] px-4 py-2 rounded-xl hover:bg-gray-400 shadow-gray-500 shadow-md">9</button>
+                        <button class="bg-gray-200 font-[500] px-3 py-2 rounded-xl hover:bg-gray-400 shadow-gray-500 shadow-md">10</button>
+                    </div>
+
+                    <p class="text-gray-800 font-[800] text-[22px] mt-6 px-2 inline-block" >$399.99</p>
+                    <button class="p-3 bg-gradient-to-r from-pink-400 to-purple-400 ml-14 mt-10 rounded-xl
+                    hover:from-pink-500 hover:to-purple-500 text-white shadow-gray-400 shadow-xl">Add to Cart
+                        <i class="fa-solid fa-cart-shopping text-white ml-2"></i>
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <div class=" flex-shrink-0 hover:scale-103 hover:-translate-x-1 hover:-translate-y-1 transition-all duration-300 shadow-xl shadow-gray-800">
+                <div class="group h-80 w-85 relative ">
+                    <img  alt="shoe" src="images/cardshoe8-1.webp" class="absolute object-cover h-full w-full opacity-100 group-hover:opacity-0   transition-opacity duration-200 ">
+                    <img  alt="shoe" src="images/cardshoe8-2.webp" class="absolute object-cover h-full w-full opacity-0   group-hover:opacity-100 transition-opacity duration-200 ">
+                </div>
+
+                <div class="p-4 pr-3 bg-white rounded-b-2xl" style="font-family: 'Poppins';">
+                    <p class="text-[16px] font-bold inline-block"style="word-spacing: 3px;" >New Balance 1906's</p>
+
+                    <select name="color" id="color" class="inline-block p-2 ml-14 bg-gray-200 hover:bg-gray-400 border-2 border-gray-200 hover:border-gray-400  rounded-md ">
+                        <option value="Color" hidden >Color</option>
+                        <option value="Color">Red</option>
+                        <option value="Color">Blue</option>
+                        <option value="Color">Black</option>
+                    </select>
+
+                    <p class="text-[13px] text-gray-700  font-semibold py-1">Men's Casual Sneakers</p>
+
+                    <p class="text-[16px] text-gray-950 font-[400]  mt-4">Select your Size</p>
+                    <div class="flex justify-around mt-3">
+                        <button class="bg-gray-200 font-[500] px-[17px] py-2 rounded-xl hover:bg-gray-400 shadow-gray-500 shadow-md">7</button>
+                        <button class="bg-gray-200 font-[500] px-4 py-2 rounded-xl hover:bg-gray-400 shadow-gray-500 shadow-md">8</button>
+                        <button class="bg-gray-200 font-[500] px-4 py-2 rounded-xl hover:bg-gray-400 shadow-gray-500 shadow-md">9</button>
+                        <button class="bg-gray-200 font-[500] px-3 py-2 rounded-xl hover:bg-gray-400 shadow-gray-500 shadow-md">10</button>
+                    </div>
+
+                    <p class="text-gray-800 font-[800] text-[22px] mt-6 px-2 inline-block" >$165.99</p>
+                    <button class="p-3 bg-gradient-to-r from-pink-400 to-purple-400 ml-14 mt-10 rounded-xl
+                    hover:from-pink-500 hover:to-purple-500 text-white shadow-gray-400 shadow-xl">Add to Cart
+                        <i class="fa-solid fa-cart-shopping text-white ml-2"></i>
+                    </button>
+
+                </div>
+
+            </div>
+        </div>
+        
+    </div>
+
+
+
+    <!-- Section - 7 -->
+
+    <div class="mt-35">
+
+        <h1 class="text-[70px] text-white bg-[#240046] text-center animate-glow " style="font-family: Lobster;">Explore our Premium Range</h1>
+
+        <div class="w-full h-150 flex gap-40 mx-auto mt-20 p-5 flex justify-center items-center">
+
+        <div class="h-130 w-80 bg-gradient-to-r from-[#FFC0CB] to-[#800080] relative rounded-[36px] shadow-black shadow-2xl transition-translate duration-400
+            hover:scale-110 hover:-translate-x-3 hover:-translate-y-3 ">
+
+        <div class="absolute h-90 w-80 bg-gray-100 relative top-10 left-15 p-2 rounded-[36px] shadow-2xl shadow-black hover:bg-gray-300"
+        style="font-family:'Arvo';">
+       
+        <h1 class="mt-2 pt-5 text-center text-2xl font-semibold">Balmain-Paris</h1>
+        <div class="absolute top-2 right-2 bg-gradient-to-r from-red-500 to-yellow-500 text-white  rounded-full py-1 px-2 text-[12px] ">
+            Limited Edition
+        </div>
+        <p class="text-center text-gray-600 mt-4">Luxury redefined – crafted with precision for elite comfort.</p>
+        <div class="flex justify-center  gap-2 mt-2">
+            ⭐⭐⭐⭐⭐ <span class="text-gray-600 ml-2">(4.9/5)</span>
+        </div>
+        <p class="text-gray-700 mt-8 pl-8 inline-block">Starting from <p class=" ml-6 inline-block text-3xl text-gray-800 font-semibold">$399/-</p></p>
+
+        </div>
+
+        <div class="absolute h-55 w-55 rounded-full top-69 left-22.5  hover:scale-125 transition-translate duration-400">
+        <div class="h-full w-full absolute bg-gradient-to-r from-[#FFC0CB] to-[#800080] rounded-full"></div>
+
+        <div class="absolute left-2.5 top-2.5 h-50 w-50 bg-white rounded-full border-5 border-gray-200">
+        <img src="images/bp.png" alt="" class="h-full w-full rounded-full object-cover">
+        </div>
+
+        </div>
+
+        </div>
+
+        <div class="h-130 w-80 bg-gradient-to-r from-[#FFC0CB] to-[#800080] relative rounded-[36px] shadow-black shadow-2xl transition-translate duration-400
+        hover:scale-110 hover:-translate-x-3 hover:-translate-y-3 ">
+
+    <div class="absolute h-90 w-80 bg-gray-100 relative top-10 left-15 p-2 rounded-[36px] shadow-2xl shadow-black hover:bg-gray-300"
+    style="font-family:'Arvo';">
+   
+    <h1 class="mt-2 pt-5 text-center text-2xl font-semibold">Gucci</h1>
+    <div class="absolute top-2 right-2 bg-gradient-to-r from-red-500 to-yellow-500 text-white  rounded-full py-1 px-2 text-[12px] ">
+        Limited Edition
+    </div>
+    <p class="text-center text-gray-600 mt-4">Luxury redefined – crafted with precision for elite comfort.</p>
+    <div class="flex justify-center  gap-2 mt-2">
+        ⭐⭐⭐⭐⭐ <span class="text-gray-600 ml-2">(4.7/5)</span>
+    </div>
+    <p class="text-gray-700 mt-8 pl-8 inline-block">Starting from <p class=" ml-6 inline-block text-3xl text-gray-800 font-semibold">$259/-</p></p>
+
+    </div>
+
+    <div class="absolute h-55 w-55 rounded-full top-69 left-22.5  hover:scale-125 transition-translate duration-400">
+    <div class="h-full w-full absolute bg-gradient-to-r from-[#FFC0CB] to-[#800080] rounded-full"></div>
+
+    <div class="absolute left-2.5 top-2.5 h-50 w-50 bg-white rounded-full border-5 border-gray-200">
+    <img src="images/gucci.jpg" alt="" class="h-full w-full rounded-full object-cover">
+    </div>
+
+    </div>
+
+    </div>
+
+    <div class="h-130 w-80 bg-gradient-to-r from-[#FFC0CB] to-[#800080] relative rounded-[36px] shadow-black shadow-2xl transition-translate duration-400
+    hover:scale-110 hover:-translate-x-3 hover:-translate-y-3 ">
+
+<div class="absolute h-90 w-80 bg-gray-100 relative top-10 left-15 p-2 rounded-[36px] shadow-2xl shadow-black hover:bg-gray-300"
+style="font-family:'Arvo';">
+
+<h1 class="mt-2 pt-5 text-center text-2xl font-semibold">Dior</h1>
+<div class="absolute top-2 right-2 bg-gradient-to-r from-red-500 to-yellow-500 text-white  rounded-full py-1 px-2 text-[12px] ">
+    Limited Edition
+</div>
+<p class="text-center text-gray-600 mt-4">Luxury redefined – crafted with precision for elite comfort.</p>
+<div class="flex justify-center  gap-2 mt-2">
+    ⭐⭐⭐⭐⭐ <span class="text-gray-600 ml-2">(5/5)</span>
+</div>
+<p class="text-gray-700 mt-8 pl-8 inline-block">Starting from <p class=" ml-6 inline-block text-3xl text-gray-800 font-semibold">$449/-</p></p>
+
+</div>
+
+<div class="absolute h-55 w-55 rounded-full top-69 left-22.5  hover:scale-125 transition-translate duration-400">
+<div class="h-full w-full absolute bg-gradient-to-r from-[#FFC0CB] to-[#800080] rounded-full"></div>
+
+<div class="absolute left-2.5 top-2.5 h-50 w-50 bg-white rounded-full border-5 border-gray-200">
+<img src="images/Dior.webp" alt="" class="h-full w-full rounded-full object-cover">
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+
+        <!-- Section-8 -->
+
+        <div class="bg-[url('images/footersvg.svg')] bg-cover w-full mt-[10em]" style="font-family: Love Ya Like A Sister;">
+
+            <div class="flex justify-around items-center p-4">
+
+                <div class="p-2">
+                    <p class="text-[28px] font-extrabold mt-4 py-2">Need Help</p>
+                    <a href="#"><p class="text-xl text-white py-2">Contact Us</p></a>
+                    <a href="#"><p class="text-xl text-white py-2">Track Orders</p></a>
+                    <a href="#"><p class="text-xl text-white py-2">Returns and Refunds</p></a>
+                    <a href="#"><p class="text-xl text-white py-2">My Account</p></a>
+                </div>
+
+                <div class="px-2 pb-10">
+                    <p class="text-[28px] font-extrabold mt-4 py-2">Company</p>
+                    <a href="#"><p class="text-xl text-white py-2">About Us</p></a>
+                    <a href="#"><p class="text-xl text-white py-2">Initiatives</p></a>
+                    <a href="#"><p class="text-xl text-white py-2">Careers</p></a>
+                </div>
+
+                <div class="p-2">
+                    <p class="text-[28px] font-extrabold mt-4 py-2">More Info</p>
+                    <a href="#"><p class="text-xl text-white py-2">Terms and Conditions</p></a>
+                    <a href="#"><p class="text-xl text-white py-2">Privacy Policy</p></a>
+                    <a href="#"><p class="text-xl text-white py-2">Sitemap</p></a>
+                    <a href="#"><p class="text-xl text-white py-2">Blogs</p></a>
+                </div>
+
+            </div>
+
+            
+            <div class="flex gap-12 w-[25%] px-[27%] mt-8 pb-5">
+                
+                <h1 class="text-3xl p-2 text-white"> Follow Us </h1>
+
+                <a href="#" class="hover:text-blue-500 hover:-translate-y-2 transition-all duration-200 p-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-10 h-10 rounded-full" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M22.67 0H1.33A1.33 1.33 0 000 1.33v21.34A1.33 1.33 0 001.33 24h11.48v-9.29h-3.13v-3.62h3.13v-2.7c0-3.1 1.9-4.79 4.66-4.79 1.32 0 2.46.1 2.79.14v3.24h-1.91c-1.5 0-1.8.72-1.8 1.76v2.35h3.6l-.47 3.62h-3.13V24h6.15A1.33 1.33 0 0024 22.67V1.33A1.33 1.33 0 0022.67 0z"/>
+                    </svg>
+                </a>
+                  <!-- YouTube -->
+                  <a href="#" class="hover:text-red-600 hover:-translate-y-2 transition-all duration-200 p-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-10 h-10" viewBox="0 0 576 512" fill="currentColor">
+                        <path d="M549.65 124.083c-6.281-23.638-24.77-42.152-48.31-48.437C453.615 64 288 64 288 64S122.385 64 74.66 75.646c-23.54 6.285-42.03 24.799-48.31 48.437C16 171.585 16 256.003 16 256.003s0 84.417 10.35 131.92c6.281 23.638 24.77 42.152 48.31 48.437C122.385 448 288 448 288 448s165.615 0 213.34-11.646c23.54-6.285 42.03-24.799 48.31-48.437C560 340.42 560 256.003 560 256.003s0-84.418-10.35-131.92zM232 335.998V176.008l144 79.995-144 79.995z"/>
+                    </svg>
+                </a>
+                
+
+                    <!-- Instagram -->
+                <a href="#" class="hover:text-pink-500 hover:-translate-y-2 transition-all duration-200 p-2">
+                 <svg xmlns="http://www.w3.org/2000/svg" class="w-10 h-10" viewBox="0 0 24 24" fill="currentColor">
+                     <path d="M12 2.2c3.2 0 3.6 0 4.8.1 1.2.1 2 .5 2.6 1 .6.6 1 1.4 1 2.6.1 1.2.1 1.6.1 4.8s0 3.6-.1 4.8c-.1 1.2-.5 2-1 2.6-.6.6-1.4 1-2.6 1-1.2.1-1.6.1-4.8.1s-3.6 0-4.8-.1c-1.2-.1-2-.5-2.6-1-.6-.6-1-1.4-1-2.6-.1-1.2-.1-1.6-.1-4.8s0-3.6.1-4.8c.1-1.2.5-2 1-2.6.6-.6 1.4-1 2.6-1 1.2-.1 1.6-.1 4.8-.1M12 0C8.6 0 8.2 0 7 .1 5.8.2 4.8.6 4 1.5 3.2 2.3 2.8 3.3 2.7 4.5.6 5.7 0 8.2 0 12s0 6.3.1 7.5c.1 1.2.5 2.2 1.4 3s1.8 1.3 3 1.4c1.2.1 1.6.1 4.8.1s3.6 0 4.8-.1c1.2-.1 2.2-.5 3-1.4s1.3-1.8 1.4-3c.1-1.2.1-1.6.1-4.8s0-3.6-.1-4.8c-.1-1.2-.5-2.2-1.4-3s-1.8-1.3-3-1.4C15.6 0 15.2 0 12 0z"/>
+                        <circle cx="12" cy="12" r="3.2"/>
+                        </svg>
+                    </a>
+
+                     <!-- Twitter -->
+                <a href="#" class="hover:text-blue-400 hover:-translate-y-2 transition-all duration-200 p-2">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="w-10 h-10" viewBox="0 0 24 24" fill="currentColor">
+                   <path d="M23.4 4.5c-.8.4-1.7.7-2.6.8.9-.5 1.7-1.4 2-2.4-.8.5-1.8.9-2.8 1.1-.8-.8-2-1.3-3.3-1.3-2.5 0-4.5 2-4.5 4.5 0 .4 0 .7.1 1.1-3.7-.2-6.9-2-9.1-4.7-.4.6-.6 1.4-.6 2.1 0 1.5.8 2.8 2 3.6-.7 0-1.3-.2-1.9-.5 0 2.1 1.5 3.8 3.4 4.2-.4.1-.8.2-1.3.2-.3 0-.6 0-.9-.1.6 1.8 2.2 3.2 4.1 3.2-1.5 1.1-3.3 1.8-5.3 1.8-.3 0-.7 0-1-.1 1.9 1.2 4.1 1.8 6.5 1.8 7.8 0 12.1-6.4 12.1-12v-.5c.9-.6 1.6-1.4 2.2-2.2z"/>
+                     </svg>
+                     </a>
+            </div>
+
+          </div>
+          
+</body>
+</html>
